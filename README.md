@@ -1,6 +1,13 @@
 # Lab 6: CPU Matrix Multiplication in C
 *By Jack C. Rose, For CSE 2241@OSU: Low Level Programming*
 
+## Table of Contents
+- [Summary](#summary)
+- [Procedure](#procedure)
+- [Runtime Analysis](#runtime-analysis)
+- [Conclusion](#conclusion)
+- [How to Run](#how-to-run-yourself)
+
 ## Summary
 
 This lab is a test of how well different matrix multiplication implementations work in C. The program compares 3 types of functions: a naive multiplication in "ijk" order, a [cBLAS](https://www.netlib.org/blas/cblas.h) multiplication using [dgemm](https://www.intel.com/content/www/us/en/docs/onemkl/developer-reference-c/2023-0/cblas-gemm-001.html), and a custom optimized multiplication using cache blocks, AVX2 vectorization, and an analysis of L1/L2/L3 storage capabilities.
