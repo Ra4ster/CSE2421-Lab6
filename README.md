@@ -35,10 +35,8 @@ Flags:                                fpu vme de pse tsc msr pae mce cx8 apic se
     __m256d vx = _mm256_loadu_pd(x);
     __m256d vy = _mm256_loadu_pd(y);
 
-    __m256d v = _mm256_mul_pd(va, vb);
-
-    // Add: (va * vb) + va
-    __m256d vz = _mm256_add_pd(_mm256_mul_pd(va, vb), va);
+    // Add: (vx * vy) + vx
+    __m256d vz = _mm256_add_pd(_mm256_mul_pd(vx, vy), vx);
 
     double result[4];
     _mm256_storeu_pd(result, vz);
