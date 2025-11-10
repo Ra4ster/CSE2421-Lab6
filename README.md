@@ -1,5 +1,5 @@
 # Lab 6: CPU Matrix Multiplication in C
-*By Jack C. Rose, For CSE 2241@OSU: Low Level Programming*
+*By Jack C. Rose, For CSE 2421@OSU: Low Level Programming*
 
 ## Table of Contents
 - [Summary](#summary)
